@@ -264,6 +264,7 @@ else{
     console.log("teacher is best ")
 }
 //FIND MAX THREE VALUES :
+//1st way : if - else
 var business = 450;
 var minister = 650;
 var sochib = 550;
@@ -296,9 +297,40 @@ if(teacher > student){
 else{
     console.log("student is best ")
 }
-
+// 2 nd way .max
 var people = 850;
 var boy = 650;
 var girl = 750;
 var max = Math.max(people, boy, girl);
 console.log(max);
+//google: javascripts find max of three numbers 
+
+//FIND THE LARGEST ELEMENT OF AN ARRAY:
+var marks = [45, 56, 65, 59, 26, 36, 89, 90]
+var max = marks[0];
+for(var i = 0; i< marks.length; i++){
+    var element = marks[i];
+    if(element > max){
+      max = element;  
+    }
+}
+console.log("Highest value is:", max);
+//SUM OF ALL NUMBERS IN AN ARRAY:
+var numbers = [45, 46, 47, 48, 49, 50, 51];
+var sum = 0;
+for(var i =0; i < numbers.length; i++){
+    var element = numbers[i];
+    sum = sum + element;
+}
+console.log("total of the numbers: ", sum);
+
+function getArraySum(numbers){
+    for(var i =0; i < numbers.length; i++){
+        var element = numbers[i];
+        sum = sum + element;
+    }
+    return sum;
+}
+var numbers = [45, 46, 47, 51];
+var result = getArraySum(numbers);
+console.log("total of the numbers: ", result);
