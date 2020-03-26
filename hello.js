@@ -185,7 +185,7 @@ console.log(phoneNo);
 var name = student2.name;//how can find name an object 
 console.log(name);
 console.log(id);
-//update phone 
+/*//update phone 
 student2.phone = 232526;
 student2["phone"] = 66668;
 student2[phoneProName] = 99991
@@ -194,8 +194,111 @@ console.log(student2);
 
 //HOW CAN ADD NEW PROPERTY:
 student2.cinema = "ogni 2";
-console.log();
+console.log();*/
 
 
+//SWAP VARIABLE, SWAP WITHOUT TEMP, DISTRUCTING:
+//1st way with swap
+var a = 5;
+var b = 7;
+console.log("before swap: a =", a, "b=", b);
+var temp = a;
+a = b;
+b = temp;
+console.log("after swap: a=", a, "b=", b);
+//2nd way without swap
+var x = 5;
+var y = 7;
+x = x + y;
+y = x - y;
+x = x - y;
+console.log("after swap: x=", x, "y =", y);
+//3rd way 
+var p = 5;
+var q = 7;
+[p, q] = [q, p];
+console.log("after swap: p =", p, "q=", q);
 
 
+//RANDOM NUMBER , RANDOM NUMBER BETWEEN 1 TO 6:
+var num = 2.12458;
+var num1 = 2.5696           //flot inteser
+var result = Math.floor(num); //floor= go on 
+var result2 = Math.ceil(num); // ceil = go under
+var result3 = Math.round(num1);
+var result3 = Math.round(num);
+//var dice = Math.random()
+var dice = Math.random() * 10;
+console.log(result);
+console.log(result2);
+console.log(result3);
+console.log(dice);
+
+var randomNum = Math.random() * 6;
+var output = Math.round(randomNum);
+console.log(output);
+//FOR LOOP ---------RANDOM
+for( var i=0; i<10; i++){
+     var randomNum = Math.random() * 6;
+     var output = Math.round(randomNum);
+     console.log(output);
+}
+//FIND MAX OF TWO VALUES , FIND MAX OF THREE VALUES:
+
+//FIND MAX TWO VALUE:
+var business = 450;
+var minister = 350;
+if(business > minister){
+    console.log("Business is bigger");
+}
+else{
+    console.log("Minister is bigger");
+}
+
+var student = 320;
+var teacher = 450;
+if(student > teacher){
+    console.log("student is best")
+}
+else{
+    console.log("teacher is best ")
+}
+//FIND MAX THREE VALUES :
+var business = 450;
+var minister = 650;
+var sochib = 550;
+if( business > sochib){
+    console.log("Business is bigger");
+}
+else{
+    console.log("sochib is bigger")
+}
+
+    if(minister > sochib){
+        console.log("minister is bigger");
+    }
+    else{
+        console.log("sochib is bigger")
+    }
+
+var teacher = 1200;
+var student = 1000;
+var doctor = 800;
+if(student > doctor ){
+    console.log("student is best ")
+}
+else { 
+    console.log("doctor is best")
+}
+if(teacher > student){
+    console.log("teacher is best")
+}
+else{
+    console.log("student is best ")
+}
+
+var people = 850;
+var boy = 650;
+var girl = 750;
+var max = Math.max(people, boy, girl);
+console.log(max);
